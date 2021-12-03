@@ -6,7 +6,7 @@
   "scripts": {
     "build:dev": "env NODE_ENV=development webpack --config webpack.config.js",
     "build:prod": "env NODE_ENV=production webpack --config webpack.config.js",
-    "dev": "env NODE_ENV=development webpack-dev-server",
+    "dev": "env NODE_ENV=development node ./bin/dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -37,9 +37,12 @@
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
+    "@types/jest": "^27.0.3",
     "express": "^4.17.1",
+    "jest": "^27.4.3",
     "nodemon": "^2.0.15",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "ts-jest": "^27.0.7"
   }
 }
